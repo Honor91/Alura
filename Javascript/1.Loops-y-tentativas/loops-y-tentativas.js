@@ -1,17 +1,16 @@
 //Librerias
 
 //Variables
-let numeroSecreto = Math.floor(Math.random()*10)+1;
+let tamaño = parseInt(prompt('Que tan grande quieres que sea el numero para jugar?, elige un numero positivo mayor a 0'))
+let numeroSecreto = Math.floor(Math.random()*tamaño)+1;
 console.log(`El numero secreto es ${numeroSecreto}`);
-
 let numeroUsuario = 0;
 let intentos = 1;
 let palabraVeces = intentos == 1? 'vez':'veces';
-let maximoIntentos = Math.floor(Math.random()*10)+1;
+let maximoIntentos = Math.floor(Math.random()*tamaño)+1;
 console.log(`El numero maximo de intentos es: ${maximoIntentos}`);
 while (numeroUsuario != numeroSecreto) {
-    numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
-
+    numeroUsuario = prompt(`Me indicas un número entre 1 y ${tamaño} por favor:`);
     console.log(numeroUsuario);
     if (numeroUsuario == numeroSecreto) {
         //Acertamos, fue verdadera la condición
