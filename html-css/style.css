@@ -10,7 +10,7 @@
 body{
     background: #121212;
     color: #F6F6F6;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1{
@@ -25,33 +25,37 @@ h1{
 }
 .presentacion{
     display: flex;
-    margin: 10%;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    padding: 20px;
+    
 }
 .presentacion__contenido{
     display: flex;
     flex-flow: row wrap;
-    width: 615px;
+    justify-content: center;
+    width: 593px;
     gap: 15px;
+    padding: 20px;
 }
 
 .presentacion__contenido__titulo{
     font-size: 36px;
     font-family: "Krona One", san-serif;
-
+    margin-bottom: 15px;
 }
 .presentacion__contenido__texto{
     font-family: "Montserrat" ,san-serif;    
-    font-size: 24;
+    font-size: 24px;
 }
 .presentacion__enlaces{
     display: flex;
-    justify-content: space-between;
+    justify-content: center ;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    
     width: 400px;
 }
     
@@ -65,7 +69,8 @@ h1{
     width: 378px;
     color: #F6F6F6;
     text-align: center;
-    padding: 21.5px;
+    padding: 9px;
+    margin: 16px;
     border-radius: 8px;
     text-decoration: none;
     border: 2px solid #22D4FD;
@@ -85,6 +90,28 @@ h1{
     background-color: #22D4FD;
     color: #272727;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding: 24px;
+}
+.header{
+    display: flex;
+    padding: 15px 185px;
+}
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+.header__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600px;
+    color: #22D4FD;
+    text-decoration: none;
+}
+.foto{
+    border: 1px solid #22D4FD;
+    border-radius: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
 }
