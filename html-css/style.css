@@ -56,6 +56,10 @@ h1{
 }
     
 .presentacion__enlaces_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
     font-family: "Montserrat" ,san-serif;
     font-weight: 500;
     width: 378px;
@@ -65,9 +69,22 @@ h1{
     border-radius: 8px;
     text-decoration: none;
     border: 2px solid #22D4FD;
+
 }
 .presentacion__enlaces__subtitulo{
     font-family: "Kroma One", sans-serif;
     font-size: 24px;
     font-weight: 400;
+}
+.presentacion__enlaces_link:hover{
+    background-color: #272727;
+    scale: 1.05;
+}
+
+.footer{
+    background-color: #22D4FD;
+    color: #272727;
+    text-align: center;
+    font-size: 24px;
+    padding: 24px;
 }
